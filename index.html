@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="bmw-logo-683.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="all.css">
+        <link rel="stylesheet" href="table.css">
+        <link rel="stylesheet" href="info.css">
+        <title>BMW</title>
+
+        <style>
+
+        body{
+            background: black;
+            max-width: 100vw;
+           
+        }
+
+.card {
+
+backdrop-filter: blur(15px);  
+flex-wrap:wrap;
+/* margin-top: 20px; */
+padding: 40px;
+height: 90vh;
+max-height: 100vh;
+border: 2px red solid;
+backdrop-filter: blur(20);
+overflow:hidden;
+background: rgba(0, 0, 0,0.2);
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+align-content: start;
+color:#000000 ;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.first {
+    overflow: hidden;
+    background-size: contain;
+    flex-wrap: wrap;
+    animation: forwards 2s fadein ;
+    
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    height: 100vh;
+    background-image: url(bmw_xm_2023_4k_2-3840x2160.jpg);
+
+}
+
+
+ video {
+    position: absolute;
+    margin-top: 170vh;
+
+    top: 0;
+    left: 0;
+  width: 100%;
+
+}
+.grid-container {
+    background-image: url(xmbg.jpg);
+           height: 500px;
+           background-size: cover;
+            background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+ 
+    
+            display: grid;
+         
+      
+            grid-template-columns: 1fr 1fr;
+            gap: 0; 
+ 
+        }
+
+        .grid-item { 
+           margin-top: 30px;
+            padding: 10px; color: white;
+           
+        }
+
+      .grid-item  ul {
+        margin-top: 15px;
+            list-style: none;
+           
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px; 
+        }
+
+      .grid-item  li {
+        color: white;
+       
+            padding: 10px;
+             display: flex; 
+            justify-content: space-between;
+
+        }
+
+  
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .foot-panel4{
+    
+    height: 80px;
+    background-color: #0f1111;
+    color:white;
+    text-align: center;
+    padding-top:25px;
+}
+
+.foott{
+ 
+margin-top: 125vh;
+  max-width: 100vw;
+  background-color: #000000;
+}
+.foott .foot-panel2 a{  
+    text-decoration: none;
+}
+
+.foott .foot-panel2{
+  
+   
+    color:white;
+    height:300px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.copyright{
+  
+    font-size: 0.8rem;;
+    padding-top: 5px;
+}
+
+.foot-panel4 a{
+    text-decoration: none;
+    color:#dddddd;    
+    
+}
+
+.pages{  
+    font-size: 0.75rem;
+   
+}
+
+footer ul a{  
+    display: block;
+    color:#dddddd;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    
+}
+
+footer ul{    
+    margin-top: 20px;
+}
+
+body {
+    margin: 0;
+    
+} 
+    </style>
+    </head>
+    <body>
+
+       
+        <div class="first">
+
+            <nav>
+                <ul>
+
+                    <li><img src="bmw-logo-683.png" width="50px" alt></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="electric.html">Electric</a></li>
+                    <li><a href="web.html">Driving experiance</a></li>
+                    <li><a href="https://www.bmw.in/en/all-models.html">More BMW</a></li>
+
+                </ul>
+            </nav> </div>
+
+
+            <div class="info" >
+                <h1>The BMW XM </h1> 
+             <h2>Sheer Driving Pleasure</h2>
+            </div>
+        
+         
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="xmspec.jpg" style="width: 600px; margin-left: 10px; margin-top: 40px ;"  alt="Image 1">
+
+            </div>
+            <div class="grid-item">
+                <h1>BMW The XM </h1><ul>
+
+                    <li> <h2>Displacement (cc)</h2> <h2>4395</h2></li>
+                    <li> <h2>Max Power</h2> <h2>643.69bhp@5400-7200rpm</h2></li>
+                    <li> <h2>Max Torque</h2> <h2>800Nm@1600-5000rpm</h2></li>
+                    <li> <h2>No. of cylinder</h2> <h2>8</h2></li>
+                    <li> <h2>Valves Per Cylinder</h2>
+                        <h2>4</h2></li>
+                    <li> <h2>Transmission Type</h2> <h2>Automatic</h2></li>
+                    <li> <h2>Gear Box</h2> <h2>8-Speed</h2></li>
+                    <li> <h2>Drive Type</h2><h2>4WD</h2></li>
+                    <li><h2>Acceleration</h2> <h2>4.3sec</h2></li>
+                    <li><h2>0-100kmph</h2> <h2>4.3sec</h2></li>
+                    
+                    </ul>
+                </div>
+
+            </div>
+
+            <video autoplay loop muted poster="placeholder.jpg"  controls autoplay loop poster="video-poster.jpg">
+                <source src="xm.mp4" type="video/mp4">
+            </video>
+
+        </div>
+</div>
+
+<div class="foott
+">
+        <footer>
+            <div class="foot-panel2">
+                <ul>
+                    <p>contact</p>
+                    <a href="#">Find a Dealer</a> 
+                    <a href="#">Request a Test Drive</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact us </a>
+                  
+                </ul>
+    
+                <ul>
+                    <p>Quick Links</p>
+                    <a href="#">Bulid your BMW</a> 
+                    <a href="#">BMW Financial Services</a>
+                    <a href="#">BMW Safety</a>
+                    <a href="#">EMI Calculator</a>
+                    <a href="#">BMW Premium Selection</a>
+                   
+                </ul>
+    
+                <ul>
+                    <p>Experiance BMW </p>
+                    <a href="#">BMW Group</a> 
+                    <a href="#">BMW Excellence Club</a>
+                    <a href="#">BMW Motorrad</a>
+                   
+                </ul>
+    
+                <ul>
+                    <p>Legal</p>
+                    <a href="#">Legal Discalimer</a> 
+                    <a href="#">Privacy Policies</a>
+                    
+                </ul>
+            </div>
+    
+            <div class="foot-panel3">
+                <div class="logo"></div>
+            </div>
+    
+            <div class="foot-panel4">
+                <div class="pages">
+                    <a href="#">Conditions of Use</a>
+                    <a href="#">Privacy Notice</a>
+                    <a href="#">Your Ads & Privacy Choices</a>
+                </div>
+    
+                <div class="copyright">
+                    &copy; BMW AG 2023
+                </div>
+            </div>
+        </footer>
+        </div>
+        </div>
+  
+       
+     
+
+    </body>
+</html>

@@ -1,0 +1,132 @@
+.ta {
+ 
+  box-shadow: 0 -40px 50px -20px rgba(48, 29, 217, 0.45) inset;
+   margin-top: 87vh;
+ 
+}    
+.ta h1{
+    font-size: 30px;
+    color: rgb(84, 168, 196);
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+   
+  }
+  table{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    z-index: 5;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: rgba(232, 232, 232, 0.2);
+    
+   box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);;
+
+    backdrop-filter: blur(10px);
+overflow: hidden;
+    height: 100%;
+    width: 100%;
+    table-layout:fixed;
+  }
+ 
+  .tbl-content{
+    height: 100%;
+   
+  }
+ .ta th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    color:rgb(0, 189, 252);
+    
+    text-transform: uppercase;
+  }
+ .ta td{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 20px;
+   color:azure;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.125);
+  }
+  section{
+ margin-left: 350px;
+ margin-right: 350px;
+ margin-top: 100px;
+ margin-bottom: 50px;
+  }
+
+
+
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+  ::-webkit-scrollbar {
+      width: 6px;
+  } 
+  ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  } 
+  ::-webkit-scrollbar-thumb {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  }
+
+  /* code below for showcase images of cars  */
+
+  .show {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .show .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .show img {
+    height: 250px;
+    width: 450px;
+    margin-bottom: 10px;
+    background-color: rgb(90, 90, 90, 0.4);
+    transition: background-color 1.6s ease;
+    border: none;
+  }
+  .c {
+    overflow-wrap: normal;
+    padding: 40px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(100);
+text-align: center;
+  display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+
+  /* END  */
+
+
+  /* video code */
+  .v{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 100px;
+  }
+         video{
+      position: relative;
+      top: 0;
+          left: 0;
+    width: 60%;
+      
+  
+      
+  
+  }

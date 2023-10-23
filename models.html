@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="bmw-logo-683.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="all.css">
+        <title>BMW</title>
+
+        <style>
+       
+
+        .photo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-gap: 10px;
+}
+
+.card {
+
+    backdrop-filter: blur(15px);
+margin-left: 50px;    
+flex-wrap:wrap;
+width: 300px;
+height: 400px;
+overflow:hidden;
+background: rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(20);
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+align-content: start;
+box-shadow: 1px 1px 9px 1px rgb(70, 69, 69);
+position : relative;
+justify-content: center;
+grid-auto-flow: dense;
+color:#080808 ;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+.card bt {
+    flex-direction: column;
+}
+.photo img {
+animation-play-state: running;
+
+
+animation: forwards 2s fadein ;
+
+    width: 300px;
+    float: inline-start;
+}
+
+
+@keyframes  fadein  {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.button-grid {
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+
+}
+
+.button-grid a {
+  text-decoration: none;
+}
+
+.button-grid input[type="image"] {
+  height: 40px;
+  width: 80px;
+ background-color: rgb(90, 90, 90,0.4);
+  transition: background-color 1.6s ease;
+  border: none;
+
+
+}
+.button-grid input[type = "button"]:hover {
+    background-color: #003050;
+    color: white;
+    cursor: pointer;
+}
+nav a :hover {
+    color:  blue;
+}
+
+
+.button-grid :hover {
+   
+    background-color: #1b1341;
+    color: #fff;
+    scroll-behavior: smooth;
+   
+}
+
+
+@keyframes slow {
+    0%{
+
+    }
+}
+
+.first {
+    overflow: hidden;
+    background-size: cover;
+    flex-wrap: wrap;
+    animation: forwards 2s fadein ;
+    
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    height: 100vh;
+    background-image: url(modelimg.png);
+}
+
+
+
+.first h1 , p {
+
+
+text-align:left;
+margin-left: 100px;
+position: relative;
+top: 200px;}
+.first h1 {
+    animation: forwards 1s in  ;
+    font-size: 50px;
+}
+.first P {
+    animation: forwards 2s in ;
+    
+    font-size: 20px;
+}
+@keyframes in {
+    0%{ 
+      transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+      transform:translateX(0) ;
+        opacity: 1;
+    }
+}
+.photo {
+  margin-top: 50px;
+   background-attachment: scroll;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-top: -25px;
+    background-image: url(39887.jpg);
+   
+   
+}
+.card {
+   
+   margin-top: 70px;
+   margin-bottom: 30px;
+}
+
+/* foooter style  */
+.foot-panel4{
+    
+    height: 80px;
+    background-color: #0f1111;
+    color:white;
+    text-align: center;
+    padding-top:25px;
+}
+
+.foott{
+    left: 50%;
+    right: 50%;
+  max-width: 100vw;
+  background-color: #000000;
+
+ 
+
+}
+.foott .foot-panel2 a{  
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
+
+.foott .foot-panel2{
+  
+   
+    color:white;
+    height:300px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.copyright{
+  
+    font-size: 0.8rem;;
+    padding-top: 5px;
+}
+
+.foot-panel4 a{
+    text-decoration: none;
+    color:#dddddd;    
+    }
+
+.pages{  
+    font-size: 0.75rem;
+   
+}
+
+footer ul a{  
+    display: block;
+    color:#dddddd;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    
+}
+footer ul{    
+    margin-top: 20px;
+}
+    </style>
+    </head>
+    <body>
+
+        <div class="first">
+
+            <nav>
+                <ul>
+                    
+                    <li><img src="bmw-logo-683.png" width="50px" alt></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="electric.html">Electric</a></li>
+                    <li><a href="web.html">Driving experiance</a></li>
+                    <li><a href="https://www.bmw.in/en/all-models.html">More BMW</a></li>
+
+                </ul>
+            </nav>
+
+            <body>
+
+                <h1>BMW</h1>
+                <p>The Ultimate Driving Machine</p>
+
+            </div>
+             <div class="photo">
+           
+                <div class="card" >
+                    <img src="https://wallpaperaccess.com/full/795670.png"
+                        alt="M series">
+
+                    <div class="button-grid">
+
+                        <a href="M1.html">
+                            <input type="button" class="bt" value="BMW M1">
+                        </a>
+
+                        <a href="M2.html">
+                            <input type="button" value="BMW M2">
+                        </a>
+
+                        <a href="M3.html">
+                            <input type="button" value="BMW M3">
+                        </a>
+
+                        <a href="M4.html">
+                            <input type="button" value="BMW M4">
+                        </a>
+
+                        <a href="M5.html">
+                            <input type="button" value="BMW M5">
+                        </a>
+
+                        <a href="M6.html">
+                            <input type="button" value="BMW M8">
+                        </a>
+                    </div>
+                </div>
+          
+
+                <div class="card">
+                    <img
+                        src="https://www.stratstone.com/-/media/stratstone/blog/2022/what-is-bmw-xdrive/bmw-5-series-touring-xdrive-logo-1920x774px.ashx"
+                        height="170px" alt="x series">
+                    <div class="button-grid">
+                        <a href="x1.html">
+                            <input type="button" value="BMW X1">
+                        </a>
+
+                        <a href="x2.html">
+                            <input type="button" value="BMW x2">
+                        </a>
+
+                        <a href="x3.html">
+                            <input type="button" value="BMW x3">
+                        </a>
+
+                        <a href="x4.html">
+                            <input type="button" value="BMW X4">
+                        </a>
+                        <a href="x5.html">
+                            <input type="button" value="BMW X5">
+                        </a>
+                        <a href="x6.html">
+                            <input type="button" value="BMW X6">
+                        </a>
+
+                        <a href="x7.html">
+                            <input type="button" value="BMW X7">
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img
+                        src="https://www.bmw-special-sales.com/content/dam/bmw/marketBMWCOM/bmw-special-sales_com/common/protection/7-protection/bmw-css-7-series-protection-ms-new-standard.jpg"
+                        alt="i series">
+                    <div class="button-grid">
+                        <a href="electric.html">
+                            <input type="button" value="BMW i3">
+                        </a>
+
+                        <a href="electric.html">
+                            <input type="button" value="BMW i7">
+                        </a>
+
+                        <a href="electric.html">
+                            <input type="button" value="BMW i8">
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <img
+                        src="https://dkb0rzxhgv35u.cloudfront.net/wp-content/uploads/2022/03/18133957/iX-banner.png"
+                        alt>
+                    <div class="button-grid">
+                        <a href="electric.html">
+                            <input type="button" value="BMW ix3">
+                        </a>
+
+                        <a href="electric.html">
+                            <input type="button" value="BMW ix5">
+                        </a>
+
+                        <a href="electric.html">
+                            <input type="button" value="BMW ix7">
+                        </a>
+
+                        <a href="electric.html">
+                            <input type="button" value="BMW i8">
+                        </a>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="foott
+">
+        <footer>
+            <div class="foot-panel2">
+                <ul>
+               
+                    <a href="#">Find a Dealer</a> 
+                    <a href="#">Request a Test Drive</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact us </a>
+                  
+                </ul>
+    
+                <ul>
+         
+                    <a href="#">Bulid your BMW</a> 
+                    <a href="#">BMW Financial Services</a>
+                    <a href="#">BMW Safety</a>
+                    <a href="#">EMI Calculator</a>
+                    <a href="#">BMW Premium Selection</a>
+                   
+                </ul>
+    
+                <ul>
+               
+                    <a href="#">BMW Group</a> 
+                    <a href="#">BMW Excellence Club</a>
+                    <a href="#">BMW Motorrad</a>
+                   
+                </ul>
+    
+                <ul>
+                  
+                    <a href="#">Legal Discalimer</a> 
+                    <a href="#">Privacy Policies</a>
+                    
+                </ul>
+            </div>
+    
+            <div class="foot-panel3">
+                <div class="logo"></div>
+            </div>
+    
+            <div class="foot-panel4">
+                <div class="pages">
+                    <a href="#">Conditions of Use</a>
+                    <a href="#">Privacy Notice</a>
+                    <a href="#">Your Ads & Privacy Choices</a>
+                </div>
+    
+                <div class="copyright">
+                    &copy; BMW AG 2023
+                </div>
+            </div>
+        </footer>
+        </div>
+            </body>
+        </html>

@@ -1,0 +1,90 @@
+img {
+    animation: ease-in 2s fidein;
+}
+.info {
+    font-size: 25px;
+animation: inright 3s forwards;
+
+}
+.info2 { 
+    font-size: 20px;
+    animation:forwards 2s inleft;
+
+}
+.info2 span , .info span{
+    color: rgb(22, 127, 162);
+}
+.ta th{
+    animation: normal 2s inup;
+}
+.ta td { 
+    animation-delay: 1s;
+    animation: normal 2s tdup;
+}
+
+.c p{
+    
+    animation: forwards 3s fadein;
+}
+@keyframes fadein {
+    0%{
+        opacity: 0;
+       transform: scale(0.7);
+    }
+    100%{
+        opacity: 1;
+     transform: scale(1);
+    }
+}
+@keyframes tdup {
+    0%{
+        opacity: 0;
+        transform: translateY(+100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes inup {
+    0%{
+        opacity: 0;
+        transform: translateY(+100%);
+    }100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes inleft {
+    0%{
+        opacity: 0;
+        transform: translateX(+100%);
+    }
+    100%{
+        opacity: 1;
+        
+        transform: translateX(0);
+
+    }
+
+}
+@keyframes inright {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        
+        transform: translateX(100px);
+
+    }
+}
+@keyframes fidein {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
