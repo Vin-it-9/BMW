@@ -15,16 +15,16 @@ animation: inright 3s forwards;
     color: rgb(22, 127, 162);
 }
 .ta th{
-    animation: normal 2s inup;
+    animation: normal 10s inup;
 }
 .ta td { 
     animation-delay: 1s;
-    animation: normal 2s tdup;
+    animation: normal 10s tdup;
 }
 
 .c p{
     
-    animation: forwards 3s fadein;
+    animation: forwards 5s fadein;
 }
 @keyframes fadein {
     0%{

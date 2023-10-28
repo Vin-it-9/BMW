@@ -1,9 +1,4 @@
-.ta {
- 
-  box-shadow: 0 -40px 50px -20px rgba(48, 29, 217, 0.45) inset;
-   margin-top: 87vh;
- 
-}    
+
 .ta h1{
     font-size: 30px;
     color: rgb(84, 168, 196);
@@ -13,7 +8,7 @@
    
   }
   table{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 50px;
     z-index: 5;
     border-radius: 30px;
@@ -54,10 +49,9 @@ overflow: hidden;
   section{
  margin-left: 350px;
  margin-right: 350px;
- margin-top: 100px;
- margin-bottom: 50px;
-  }
+ 
 
+  }
 
 
 
@@ -80,24 +74,34 @@ overflow: hidden;
     gap: 30px;
     justify-content: center;
     align-content: center;
+    width: 800px;
+  white-space: pre-wrap; 
+  overflow-wrap: break-word;
+
+   
+  
   }
   
   .show .image-container {
+   
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
   .show img {
-    height: 250px;
-    width: 450px;
+    
+    width: 100%;
+  height: auto;
     margin-bottom: 10px;
     background-color: rgb(90, 90, 90, 0.4);
     transition: background-color 1.6s ease;
     border: none;
   }
   .c {
+   
     overflow-wrap: normal;
+    
     padding: 40px;
     font-size: 25px;
     color: rgb(255, 255, 255);
