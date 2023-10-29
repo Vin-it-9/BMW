@@ -11,6 +11,15 @@ animation: inright 3s forwards;
     animation:forwards 2s inleft;
 
 }
+@media (max-width: 768px) {
+    .info {
+        font-size: 10px;
+    }
+    .info2 {
+        font-size: 6px;
+    }
+
+}
 .info2 span , .info span{
     color: rgb(22, 127, 162);
 }

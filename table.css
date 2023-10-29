@@ -23,7 +23,10 @@ overflow: hidden;
     width: 100%;
     table-layout:fixed;
   }
- 
+ .ta{
+  margin-left: 200px;
+  margin-right: 200px;
+ }
   .tbl-content{
     height: 100%;
    
@@ -77,10 +80,34 @@ overflow: hidden;
     width: 800px;
   white-space: pre-wrap; 
   overflow-wrap: break-word;
+}
+  @media (max-width: 768px) {
+    .ta {
+      /* Reset the margin values to 0 when the screen width is less than 768px */
+      margin-left: 30px;
+      margin-right: 30px;
+      
+    }
+    .ta th {
+      font-size: 18px;
+    }
+    .ta td{
+      font-size: 14px;
+    }
+    .c p{
+      font-size: 12px;
+    }
+    li{
+      font-size: 15px;
+
+    }
+    
+
+  }
 
    
   
-  }
+  
   
   .show .image-container {
    
