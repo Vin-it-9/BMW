@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="slide.css">
 <link rel="stylesheet" href="info.css">
 <link rel="stylesheet" href="table.css">
+<link rel="stylesheet" href="responsive.css">
 <link rel="stylesheet" href="animationcar.css">
 <script src="slideimg.js"></script>
 
@@ -38,116 +39,14 @@
    margin: 0;
    padding: 0; 
        }
-
-       @media screen and (max-width: 768px) {
-        nav{
-      display: none;}
-  .first{
-    height:100vh;
- 
-    background-size:cover;
-    /* background-size: 100%; */
-    background-position: center;
-    
-
-    background-repeat: no-repeat;
-    background-image: url(https://cdn.wallpapersafari.com/27/47/XWfqFM.jpg);
-
-  }
-  .info  {
-    /* display: none; */
-    font-size:  15px;
-    color: rgb(0, 0, 0);
-    animation: none;
-
-
-  }
- .info span1{
-color:rgb(9, 143, 192);
-font-size: 150%;
-  }
-  .info span2{
-color:rgb(47, 0, 255);
-font-size: 150%;
-  }
-  .info span3{
-    font-size: 150%;
-color:rgb(255, 0, 0);
-  }
-  .info2 {
-    display: none;
-    animation: 
-    none;
-  }
-  .scrdown{
-position: absolute;
-top: 450px;
-left: 30px;
-/* font-size: 50px; */
-animation: moveup 1.5s ease-in infinite;
-} 
- 
-
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: rgb(255, 255, 255,0.2);
-  backdrop-filter: blur(5px);
-  color: black;
-}
-
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: rgb(255, 255, 255,0.2);
-  backdrop-filter: blur(5px);
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
-.topnav .icon {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 768px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-
-
-
+       video{
+        position: center;
+       }
+       @media (min-width: 786px) {
+        video{
+          display: none;
+        }
+       }
 @keyframes moveup{
 0%{
   transform: translateY(0px);
@@ -160,17 +59,71 @@ animation: moveup 1.5s ease-in infinite;
 }
 
 }
+@media (max-width: 786px) {
+  .response video{
+    position:absolute;
+    width: 100%;
+    z-index: -1;
+    height: 100vh; /* 100% viewport height */
+    overflow: hidden;
+   object-fit: cover;
+   /* opacity: 0.1; */
+    
+  }
+  @media screen and (max-width: 768px) {
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+float: right;
+display: block;
+}
+}
 
-@media (min-width: 786px) {
-          .scrdown h2 {
-              display: none;
-          }
-          .topnav {
-            display: none;
-          }
-   
-    }
-          
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 768px) {
+  .scrdown{
+    color: white;
+  }
+.topnav.responsive {position: relative;}
+.topnav.responsive a.icon {
+position: absolute;
+right: 0;
+top: 0;
+}
+.topnav a.active {
+background-color: rgb(255, 255, 255,0.2);
+backdrop-filter: blur(5px);
+color: white;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+display: none;
+}
+.topnav .icon {
+display: none;
+}
+.topnav.responsive a {
+float: none;
+display: block;
+text-align: left;
+}
+}
+  
+nav{
+  display: none;}
+  .first{
+    background-image: none;
+height:100vh;
+background-size:cover;
+background-position: center;
+background-repeat: no-repeat;
+/* background-image: url(https://cdn.wallpapersafari.com/27/47/XWfqFM.jpg); */
+
+
+}
+}
+
+
+    
       
 
 
@@ -202,6 +155,8 @@ animation: moveup 1.5s ease-in infinite;
         }
       }
       </script>
+      <div class="response">
+        <video src="response/BMW_m5.mp4" muted autoplay loop ></video>
     <div class="topnav" id="myTopnav">
       <a href="index.html" class="active">Home</a>
       <a href="models.html">Models</a>
@@ -210,7 +165,7 @@ animation: moveup 1.5s ease-in infinite;
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
-    </div>
+    </div></div>
 
    <div class="info">
     <h1>The <span> <span1>B</span1><span2>M</span2><span3>W</span3> </span> M5  competition</h1> 
@@ -226,6 +181,7 @@ animation: moveup 1.5s ease-in infinite;
 
   
   </div> 
+  
 <div class="back">
   <div class="ta"    data-aos="fade-up"
   data-aos-offset="100"
