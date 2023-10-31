@@ -1,5 +1,37 @@
 
 @media screen and (max-width: 768px) {
+
+  .slider-wrapper .image-list .image-item {
+    height: 200px;
+  }
+
+  .container {
+   margin-left: 20px;
+   margin-right: 20px;
+  
+  }
+  .slider-wrapper .slide-button#prev-slide {
+ background: rgba(0, 0, 0, 0.5);
+    left: -5px;
+    height: 50px;
+    width: 60px;
+    color: whitesmoke;
+    font-size: 17px;
+    backdrop-filter: blur(5px);
+    display: none;
+  }
+
+  
+  .slider-wrapper .slide-button#next-slide {
+    right: -10px;
+    font-size: 17px;
+    height: 50px;
+    width: 60px;
+    background: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    backdrop-filter: blur(5px);
+   
+  }
     nav{
   display: none;}
 

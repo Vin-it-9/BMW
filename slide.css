@@ -53,6 +53,7 @@
 
 .slider-wrapper .slide-button#next-slide {
   right: -25px;
+ 
 }
 
 .slider-wrapper .image-list {
@@ -131,3 +132,5 @@
   transition: transform 0.5s;
 transform: scale(1.3);
 }
+
+
